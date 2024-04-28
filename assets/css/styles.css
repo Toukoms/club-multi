@@ -4,10 +4,67 @@
   font-family: "Rooto", "Helvetica";
 }
 
+:root {
+  --primary-color: #1B1919;
+  --secondary-color: #26a69a;
+  --primary-text-color: #fff;
+}
+
 body {
   width: 100vw;
   height: auto;
 }
+
+a {
+  color: var(--primary-text-color);
+  text-decoration: none;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 2.5rem 3vw;
+  padding-bottom: 2rem;
+  background-color: var(--primary-color);
+}
+
+header nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2vw;
+}
+
+header nav a, header nav button {
+  font-family: "Poppins", sans-serif;
+  color: var(--primary-text-color);
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  text-align: left;
+}
+
+header nav a {
+  position: relative;
+  font-style: italic;
+  font-weight: 400;
+}
+
+header nav button {
+  background-color: transparent;
+  border: 4px solid var(--secondary-color);
+  border-radius: 68px;
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+
 main section,
 footer {
   margin: 0vh 0vh 5vh 0vh;
