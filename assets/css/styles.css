@@ -5,7 +5,7 @@
 }
 
 :root {
-  --primary-color: #1B1919;
+  --primary-color: #1b1919;
   --secondary-color: #26a69a;
   --primary-text-color: #fff;
 }
@@ -41,7 +41,8 @@ header nav {
   gap: 2vw;
 }
 
-header nav a, header nav button {
+header nav a,
+header nav button {
   font-family: "Poppins", sans-serif;
   color: var(--primary-text-color);
   font-size: 1.25rem;
@@ -61,14 +62,15 @@ header nav a::before {
   position: absolute;
   top: 28px;
   left: 2px;
-  background-color:  var(--secondary-color);
+  background-color: var(--secondary-color);
   border-radius: 68px;
   height: 3px;
   width: 0;
   transition: all 0.5s ease-in-out;
 }
 
-header nav a.active::before, header nav a:hover::before {
+header nav a.active::before,
+header nav a:hover::before {
   width: 100%;
   border-width: 2px;
 }
@@ -91,56 +93,70 @@ header nav button:hover {
 main section,
 footer {
   margin: 0vh 0vh 5vh 0vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
+
 .section_home {
   width: 100%;
   height: 100vh;
   border: 1px solid rgb(17, 6, 232);
 }
+
 .section_activite {
   width: 100%;
-  height: 80vh;
   border: 1px solid green;
   display: flex;
   flex-direction: column;
-  justify-content: space-around; 
+  justify-content: center;
   align-items: center;
   background-color: var(--primary-color);
-  article{
+  padding: 6rem 0;
+
+  article {
     text-align: center;
-    h1{
+
+    h1 {
       color: var(--primary-text-color);
       font-size: 2em;
       font-weight: bold;
-      margin-bottom: 5vh;
+      margin-bottom: 6rem;
     }
-    .card{
+
+    .all_card {
       width: 90vw;
-      height: 50vh;
-      /* border: 1px solid green; */
+      height: 20rem;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      .all_card{
+      align-items: center;
+
+      .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        padding: 2rem 1rem;
+        gap: 1rem;
         width: 20%;
         height: 100%;
-        border:4px solid var(--secondary-color);
+        border: 4px solid var(--secondary-color);
         color: var(--primary-text-color);
-        .card-img, .card-txt{
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          text-align: center;
+
+        .card-img {
+          position: relative;
+          padding: 1rem;
+          width: 50%;
+          aspect-ratio: 1/1;
+          
+          img {
+          position: absolute;
+          inset: 0;
           width: 100%;
-          height: 50%;
-          /* border:2px solid var(--secondary-color); */
+          height: 100%;
+          object-fit: contain;
+          object-position: center;
         }
-  
+        }
       }
     }
   }
@@ -152,7 +168,7 @@ footer {
   border: 1px solid rgb(242, 121, 0);
 }
 
-.section_motivation {
+.section_contact {
   width: 100%;
   height: 100vh;
   border: 1px solid rgb(242, 0, 0);
