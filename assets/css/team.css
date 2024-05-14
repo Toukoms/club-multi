@@ -1,0 +1,228 @@
+header nav a,
+header button {
+    color: var(--primary-text-color);
+}
+
+header {
+    background-color: #ffffffd5;
+    color: var(--primary-text-color);
+    box-shadow: 0px 2px 12px 4px #26a69a10;
+    backdrop-filter: blur(3px);
+}
+
+section,
+footer {
+    border: none !important;
+}
+
+main {
+    display: flex;
+    align-items: center;
+}
+
+section#teams {
+    min-height: 100vh;
+    padding: 6rem;
+    margin-top: 3rem;
+    width: 100%;
+}
+
+section#teams h1 {
+    font-size: 3rem;
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+section#teams div.all-teams {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+section#teams div.all-teams div.team-box {
+    width: 80vw;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section#teams div.all-teams h2 {
+    width: 100%;
+    font-size: 2.25rem;
+    margin-inline: auto;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    padding-left: 2rem;
+    padding-block: 0.5rem;
+    border: 1px solid #00000079;
+    letter-spacing: 1.5px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+section#teams div.team {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+section#teams div.all-teams div.card {
+    position: relative;
+    width: 16rem;
+    aspect-ratio: 3 / 4;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.3 ease;
+    border: 1px dotted var(--accent-color);
+}
+
+section#teams .card .card-front,
+section#teams .card .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    transition: transform 1s ease 0.2s;
+    overflow: hidden;
+}
+
+section#teams .card .card-front {
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid var(--accent-color); */
+}
+
+section#teams .card .card-back {
+    backface-visibility: hidden;
+    background-color: #ffffffc5;
+    color: var(--primary-text-color);
+    backdrop-filter: blur(3px) brightness(0.75);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    /* box-shadow: 0 0 12px 4px #22bbe020; */
+    /* border: 1px solid #fff; */
+}
+
+section#teams .card-back .heading {
+    text-align: center;
+}
+
+section#teams .card .card-back {
+    transform: rotateY(180deg);
+}
+
+section#teams .card:hover .card-front {
+    transform: rotateY(180deg);
+    background-color: transparent;
+}
+
+section#teams .card:hover .card-back {
+    transform: rotateY(0);
+}
+
+section#teams div.all-teams div.card:hover .card-front .details {
+    visibility: hidden;
+}
+
+section#teams div.card div.details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+section#teams .card .card-back .details {
+    padding: 1rem;
+    padding-top: 1.25;
+    gap: 1rem;
+}
+
+section#teams .card .card-front .details {
+    padding: 0.5rem;
+    background-color: var(--primary-text-color);
+    color: var(--primary-color);
+    transition: none;
+}
+
+section#teams div.card .image {
+    position: relative;
+    width: 100%;
+    height: 20rem;
+    overflow: hidden;
+}
+
+section#teams div.card .image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: scale 0.3s ease;
+}
+
+section#teams div.all-teams div.card:hover img {
+    scale: 1.1;
+}
+
+section#teams div.all-teams div.card:hover .image {
+    transition: all 0.3s ease-in-out;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+}
+
+section#teams div.card p {
+    font-size: 0.75rem;
+    padding-inline: 0.5rem;
+    letter-spacing: 1.25px;
+    display: -webkit-box;
+    -webkit-line-clamp: 14;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-align: justify;
+}
+
+section#teams .card #contact {
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 1rem;
+    width: fit-content;
+}
+
+section#teams .card #contact a {
+    width: 1.5rem;
+    aspect-ratio: 1 / 1;
+    border: 1px solid var(--primary-text-color);
+    border-radius: 50%;
+    padding: .25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: color 0.6s ease;
+}
+
+section#teams .card #contact a:hover {
+    background-color: var(--primary-text-color);
+    color: var(--primary-color);
+}
+
+section#teams .card span.role {
+    font-size: 1.25rem;
+    text-align: center;
+    color: var(--orange);
+    text-transform: capitalize;
+    padding-right: 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px dashed var(--accent-color);
+}
