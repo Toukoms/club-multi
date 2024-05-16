@@ -146,9 +146,12 @@ section#teams .card .card-back .details {
 
 section#teams .card .card-front .details {
     padding: 0.5rem;
-    background-color: var(--primary-text-color);
-    color: var(--primary-color);
+    background-color: var(--primary-color);
+    color: var(--primary-text-color);
+    text-align: center;
     transition: none;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
 }
 
 section#teams div.card .image {
@@ -220,10 +223,6 @@ section#teams .card #contact a:hover {
 
 section#teams .card span.role {
     font-size: 1.25rem;
-    text-align: center;
     color: var(--orange);
     text-transform: capitalize;
-    padding-right: 0.75rem;
-    padding-top: 0.5rem;
-    border-top: 1px dashed var(--accent-color);
 }

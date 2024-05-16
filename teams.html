@@ -5,11 +5,14 @@
   <meta charset="utf-8" />
   <title>Projet Multimédia</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <link rel="stylesheet" href="./assets/css/styles.css" />
   <link rel="stylesheet" href="./assets/css/team.css" />
   <script src="./assets/js/teams_data.js" defer></script>
   <script src="./assets/js/teams.js" defer></script>
-  <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/script.js" defer></script>
 </head>
 
 <body>
@@ -49,12 +52,12 @@
     <section id="teams">
       <h1>Nos équipes</h1>
       <div class="all-teams">
-        <div class="team-box" data-aos="fade-down" data-aos-duration="1000">
-          <h2>membres de bureau</h2>
+        <div class="team-box">
+          <h2 data-aos="fade-down" data-aos-duration="1000">membres de bureau</h2>
           <div class="team" id="admin-container">
           </div>
           <div class="team">
-            <div class="card">
+            <div class="card" data-aos="zoom-in-up" data-aos-duration="300">
               <div class="card-front">
                 <div class="image">
                   <img
@@ -106,8 +109,8 @@
           </div>
         </div>
 
-        <div class="team-box" data-aos="fade-down" data-aos-duration="1000">
-          <h2>membres</h2>
+        <div class="team-box">
+          <h2 data-aos="fade-down" data-aos-duration="1000">membres</h2>
           <div class="team" id="member-container">
           </div>
         </div>
@@ -133,7 +136,7 @@
           </div>
           <div class="application_text">
             <a href="https://maps.app.goo.gl/NGjLTWBdgrRigsdo7" target="_blank">BP 8515 <br />
-              Alarobia Antananarivo 101, MADAGASCAR</a>
+              Enceinte ASFOR, Antananarivo 101</a>
           </div>
         </div>
         <div onclick="redirectExt(`https://www.facebook.com/passerelles.numeriques.madagasikara`)" class="application">
@@ -176,6 +179,9 @@
       </div>
     </div>
   </footer>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>

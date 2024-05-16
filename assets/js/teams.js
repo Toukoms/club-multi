@@ -1,6 +1,6 @@
 function generateTeamCard(data) {
   const cardHtml = `
-    <div class="card">
+    <div class="card" data-aos="zoom-in-up" data-aos-duration="300">
       <div class="card-front">
         <div class="image">
           <img src="${data.image}" alt="team" />

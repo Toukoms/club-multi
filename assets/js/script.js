@@ -1,13 +1,13 @@
-window.addEventListener('load', () => {
-    const loading = document.getElementById('loader');
-    loading.style.display = 'none';
-})
+window.addEventListener("load", () => {
+  const loading = document.getElementById("loader");
+  loading.style.display = "none";
+});
 
-const header = document.getElementsByTagName('header')[0];
-header.classList.toggle('sticky', window.scrollY > 12);
-window.addEventListener('scroll', () => {
-    header.classList.toggle('sticky', window.scrollY > 12);
-})
+const header = document.getElementsByTagName("header")[0];
+header.classList.toggle("sticky", window.scrollY > 12);
+window.addEventListener("scroll", () => {
+  header.classList.toggle("sticky", window.scrollY > 12);
+});
 
 const modal = document.querySelector(".modal");
 function show_modal() {
@@ -18,5 +18,5 @@ function hide_modal() {
 }
 
 function redirectExt(href) {
-    window.open(href, '_blank');
+  window.open(href, "_blank");
 }
