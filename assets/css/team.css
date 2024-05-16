@@ -48,13 +48,14 @@ section#teams div.all-teams div.team-box {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    /* border: 1px solid var(--orange); */
+    padding: 1rem;
 }
 
 section#teams div.all-teams h2 {
-    width: 100%;
-    font-size: 2.25rem;
+    width: 50%;
+    font-size: 1.75rem;
     margin-inline: auto;
-    margin-top: 2rem;
     margin-bottom: 1rem;
     padding-left: 2rem;
     padding-block: 0.5rem;

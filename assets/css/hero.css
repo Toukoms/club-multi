@@ -13,24 +13,6 @@
     animation: change 20s infinite ease;
 }
 
-@keyframes change {
-    0% {
-        background-image: url("../images/bg/image1.jpg");
-    }
-
-    33.33% {
-        background-image: url("../images/bg/image2.jpg");
-    }
-
-    66.66% {
-        background-image: url("../images/bg/image3.jpg");
-    }
-
-    100% {
-        background-image: url("../images/bg/image4.jpg");
-    }
-}
-
 .section_home div.container {
     display: flex;
     flex-direction: column;
@@ -46,8 +28,7 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: #1b1919ad;
-    /* backdrop-filter: brightness(1.25); */
+    background-color: #1b191979;
 }
 
 .section_home h2 {
@@ -90,4 +71,22 @@
 .section_home li {
     display: inline;
     margin-right: 10vw;
+}
+
+@keyframes change {
+    0% {
+        background-image: url("../images/bg/image1.jpg");
+    }
+
+    33.33% {
+        background-image: url("../images/bg/image2.jpg");
+    }
+
+    66.66% {
+        background-image: url("../images/bg/image3.jpg");
+    }
+
+    100% {
+        background-image: url("../images/bg/image4.jpg");
+    }
 }

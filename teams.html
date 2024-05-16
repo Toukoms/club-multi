@@ -4,37 +4,62 @@
 <head>
   <meta charset="utf-8" />
   <title>Projet Multimédia</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
   <link rel="stylesheet" href="./assets/css/styles.css" />
   <link rel="stylesheet" href="./assets/css/team.css" />
   <script src="./assets/js/teams_data.js" defer></script>
   <script src="./assets/js/teams.js" defer></script>
+  <script src="./assets/js/script.js"></script>
 </head>
 
 <body>
+  <div id="loader">
+    <img src="./assets/images/spinner.svg" alt="">
+  </div>
+
   <header>
     <div class="logo">
-      <img src="./assets/images/logo.jpeg" alt="logo" />
+      <a href="./index.html"><img class="logo" src="./assets/images/logo.png" alt=""></a>
     </div>
     <nav>
       <a href="./index.html">Acceuil</a>
-      <a href="#">Nos Activités</a>
-      <a href="#">Qui Sommes-nous</a>
-      <a href="#" class="active">Nos équipes</a>
+      <a href="./about.html">Qui Sommes-nous</a>
+      <a href="./teams.html" class="active">Nos équipes</a>
     </nav>
-    <button>Rejoignez-nous</button>
+    <button onclick="show_modal()">Rejoignez-nous</button>
+
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="hide_modal()">&times;</span>
+        <h2>Please fill it</h2>
+        <form action="#">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          <label for="message">Message:</label>
+          <input type="message" id="message" name="message" required>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </div>
   </header>
+
   <main>
     <section id="teams">
       <h1>Nos équipes</h1>
       <div class="all-teams">
-
-        <div class="team-box">
+        <div class="team-box" data-aos="fade-down" data-aos-duration="1000">
           <h2>membres de bureau</h2>
+          <div class="team" id="admin-container">
+          </div>
           <div class="team">
             <div class="card">
               <div class="card-front">
                 <div class="image">
-                  <img src="./assets/images/teams/arnel.jpg" alt="team" />
+                  <img
+                    src="https://media.licdn.com/dms/image/C5603AQFwxqYBIk2QmQ/profile-displayphoto-shrink_800_800/0/1516559881460?e=2147483647&v=beta&t=BiNt9KlkUWMZzvV7yc1lJGsoYbo8QBtssB-Cdp9cNGI"
+                    alt="team" />
                 </div>
                 <div class="details">
                   <div class="heading">
@@ -79,11 +104,9 @@
               </div>
             </div>
           </div>
-          <div class="team" id="admin-container">
-          </div>
         </div>
 
-        <div class="team-box">
+        <div class="team-box" data-aos="fade-down" data-aos-duration="1000">
           <h2>membres</h2>
           <div class="team" id="member-container">
           </div>
@@ -91,8 +114,67 @@
       </div>
     </section>
   </main>
-  <footer>
-    <h1>Footer</h1>
+
+  <footer data-aos="fade-down" data-aos-duration="1000">
+    <article class="article_contact">
+      <h1 class="grand_titre">RESTONS EN CONTACT</h1>
+      <div class="all_application">
+        <div onclick="redirectExt(`https://www.facebook.com/profile.php?id=61557986422642`)" class="application">
+          <div class="application_img">
+            <i class="fa-brands fa-facebook"></i>
+          </div>
+          <div class="application_text">
+            <a href="https://www.facebook.com/profile.php?id=61557986422642">@clubs PNM</a>
+          </div>
+        </div>
+        <div onclick="redirectExt(`https://maps.app.goo.gl/NGjLTWBdgrRigsdo7`)" class="application">
+          <div class="application_img">
+            <i class="fa-solid fa-location-dot"></i>
+          </div>
+          <div class="application_text">
+            <a href="https://maps.app.goo.gl/NGjLTWBdgrRigsdo7" target="_blank">BP 8515 <br />
+              Alarobia Antananarivo 101, MADAGASCAR</a>
+          </div>
+        </div>
+        <div onclick="redirectExt(`https://www.facebook.com/passerelles.numeriques.madagasikara`)" class="application">
+          <div class="application_img">
+            <i class="fa-brands fa-facebook"></i>
+          </div>
+          <div class="application_text">
+            <a href="https://www.facebook.com/passerelles.numeriques.madagasikara">@Passerelles Numériques Madagasikara</a>
+          </div>
+        </div>
+        <div onclick="redirectExt(`https://www.passerellesnumeriques.org/fr/nos-actions/madagascar/`)" class="application">
+          <div class="application_img">
+            <i class="fa-solid fa-globe"></i>
+          </div>
+          <div class="application_text">
+            <a href="https://www.passerellesnumeriques.org/fr/nos-actions/madagascar/" target="_blank">Site Web<br />Passerelles Numériques</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="article_copyright">
+      <p>C2024 - Multimédia PNM | All right reserved</p>
+      <a href="#">
+        <p>Mentions légales</p>
+      </a>
+    </article>
+
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="hide_modal()">&times;</span>
+        <h2>Please fill it</h2>
+        <form action="#">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </div>
   </footer>
 </body>
 

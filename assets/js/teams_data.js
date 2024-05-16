@@ -2,8 +2,7 @@ const admin_team = [
   {
     name: "RAMAHAVATRAHARISOA",
     firstname: "Ny Anja Manana",
-    role: "",
-    image: "./assets/images/teams/Asmine.jpg",
+    image: "",
     description: `Étant le rapporteur de ce club me permet de transmettre les messages, les consigne et
         surtout les informations, en favorisant les communications avec  tout le monde.
         C'est un grand plaisir d'être le messagier de ce club.
@@ -38,7 +37,7 @@ const admin_team = [
   {
     name: "LARIO",
     firstname: "Stanislas",
-    image: "./assets/images/teams/Asmine.jpg",
+    image: "",
     description: `Être designer est une source de fierté pour moi,car c'est à travers le design que je parviens 
         à véhiculer des messages,des émotions,tout ce que je peine à exprimer autrement. Je tiens 
         à souligner que le créateur est le parfait exemple de designer,ses créations m'inspirent et
@@ -49,7 +48,7 @@ const admin_team = [
   {
     name: "RANDRIANARISON",
     firstname: "Kevin",
-    image: "./assets/images/teams/Asmine.jpg",
+    image: "",
     description: `Être designer est une source de fierté pour moi,car c'est à travers le design que je parviens 
         à véhiculer des messages,des émotions,tout ce que je peine à exprimer autrement. Je tiens 
         à souligner que le créateur est le parfait exemple de designer,ses créations m'inspirent et
@@ -78,28 +77,29 @@ const all_teams = [
     name: "Andriamanohiniaina",
     firstname: "Herison Jean Freddy",
     image: "./assets/images/teams/Freddy2.jpg",
-    description: ``,
+    description: `Etant que Développeur, je suis un passionné de technologie, un amoureux du code. Chaque jour, je me lève avec l'excitation de découvrir ce que le monde de la programmation me réserve. En tant que développeur web, je suis un explorateur du cyberespace, naviguant à travers des lignes de code pour découvrir de nouvelles terres numériques`,
     role: "Développeur"
   },
   {
     name: "TSITOHAINA",
     firstname: "Miharizo Danie",
     image: "./assets/images/teams/Tsito.jpg",
-    description: ``,
+    description: `"En tant que rédacteur web du club, je suis poussé par la passion de transformer les idées en mots qui inspirent et éduquent. Chaque article que j'écris est une opportunité d'engager, d'informer et de connecter les membres de notre club, alimentant ainsi ma motivation. Je crois que chaque mot a le pouvoir de faire une différence, et c'est cette conviction qui me motive à donner le meilleur de moi-même à chaque fois que je m'assois pour écrire."`,
     role: "Redacteur Web"
   },
   {
     name: "KOTONIRINA",
     firstname: "Nidot",
     image: "./assets/images/teams/Nidot.jpg",
-    description: ``,
+    description: `En tant que développeur web, chaque ligne de code est une chance de créer quelque chose de magique sur l'écran de quelqu'un car coder ne se délimite pas au dela d'une balise `,
     role: "Développeur"
   },
   {
     name: "FENITRINIANA",
     firstname: "Sylvie",
     image: "./assets/images/teams/Fenitra.jpg",
-    description: ``,
+    description: `"En tant que designer web du club, je suis motivé par la possibilité de créer des expériences visuelles qui captivent et engagent. Chaque pixel que je place, chaque couleur que je choisis, est une expression de ma passion pour le design qui améliore la vie des membres de notre club.`,
+    role: "Designer"
   },
   {
     name: "RAZANAKOTO",
@@ -112,90 +112,90 @@ const all_teams = [
     name: "RAVELOJAONA",
     firstname: "Andriatiana Christian",
     image: "./assets/images/teams/Christian.jpg",
+    description: `La programmation est une forme d'art, où chaque ligne de code est une note de musique dans une symphonie numérique. En tant que développeur web, je suis un compositeur de solutions, un chef d'orchestre du code. Chaque projet est une partition à interpréter, une opportunité de créer quelque chose de beau et de fonctionnel.`,
+    role: "Développeur"
+  },
+  {
+    name: "Andriantsoa",
+    firstname: "Hajaniaina Rado",
+    image: "./assets/images/teams/Rado.jpg",
+    description: `Mon écran est mon royaume, où je règne en maître sur les lignes de code et les algorithmes. La résolution de problèmes est mon défi quotidien, une quête où chaque obstacle est une invitation à innover. En tant que développeur web, je suis un artisan du digital, sculptant des solutions sur mesure pour répondre aux besoins de mes clients.`,
+    role: "Développeur"
+  },
+  {
+    name: "RAFANOMENZANTSOA",
+    firstname: "Tolotriniaina Valisoa",
+    image: "",
+    description: `"La programmation est plus qu'un métier pour moi, c'est une véritable mission. Je crois en la puissance du code pour résoudre des problèmes et transformer des vies. Chaque projet est une opportunité de laisser une empreinte positive dans le cyberespace, une marque de mon dévouement à créer un monde meilleur."`,
+    role: "Développeur"
+  },
+  {
+    name: "RAKOTONJANAHARY ",
+    firstname: "Marino",
+    image: "",
+    description: `Chaque jour, je me lève avec la passion de créer des expériences numériques qui transcendent les attentes. Mon clavier est ma baguette magique, et mes lignes de code sont des incantations qui donnent vie à des idées. Dans ce monde numérique en constante évolution, je suis l'architecte de l'innovation, façonnant l'avenir pixel par pixel.`,
+    role: "Développeur"
+  },
+  {
+    name: "Andriantsoa ",
+    firstname: "Hajaniaina Rado",
+    image: "",
+    description: `"En tant que créateur de contenu pour le site web du club, je suis animé par la passion de partager des histoires, des idées et des connaissances qui inspirent et éduquent. Chaque contenu que je crée est une opportunité de toucher les cœurs, d'éveiller les esprits et de renforcer la communauté de notre club. Je suis motivé par la conviction que chaque mot, chaque image, chaque vidéo a le pouvoir de créer un impact, et c'est cette motivation qui me pousse à créer du contenu de qualité chaque jour."`,
+    role: "Contenu"
+  },
+  {
+    name: "FAIBATO ",
+    firstname: "Clermont Judicaël",
+    image: "",
+    description: `"En tant que créateur de contenu du site web du club, chaque jour est une nouvelle opportunité pour moi de créer des expériences significatives et engageantes. Je suis motivé par le pouvoir des mots et des visuels pour connecter, inspirer et informer. Chaque contenu que je crée est un reflet de ma passion pour l'innovation et l'excellence, et c'est cette passion qui me pousse à continuer à créer, à apprendre et à grandir chaque jour."`,
+    role: "Contenu"
+  },
+  {
+    name: "RA-FANOMEZANA ",
+    firstname: "Herimamy Fenohasina",
+    image: "",
+    description: `"En tant que créateur de contenu pour notre site web de club, chaque jour est une nouvelle opportunité pour inspirer, éduquer et connecter. Chaque mot que j'écris, chaque image que je sélectionne, chaque idée que je partage, a le potentiel de toucher une vie, de susciter une passion, de changer une perspective. Je ne suis pas simplement un créateur de contenu, je suis un architecte de possibilités, un catalyseur de changement, un champion de notre mission collective."`,
+    role: "Contenu"
+  },
+  {
+    name: "RAHARINANDRASANA ",
+    firstname: "Willys Sadi Arnel",  
+    image: "",
+    description: `La logique et la créativité s'entremêlent dans mon processus de développement, créant une synergie puissante qui alimente mon travail. Je vois chaque bug comme une opportunité d'apprentissage, une chance de perfectionner mes compétences et d'élever mes standards. Dans un monde numérique en perpétuelle évolution, je suis un pilote de l'innovation, naviguant avec assurance vers de nouveaux horizons."`,
+    role: "Développeur"
+  },
+  {
+    name: "RAMAHANDRISOA ",
+    firstname: "Nassi Nassaï Gaël",
+    image: "",
+    description: `"Je suis motivé par la possibilité de créer des solutions qui simplifient la vie des gens et améliorent leur quotidien. La technologie est mon moyen d'expression, un langage universel qui transcende les frontières et les barrières. En tant que développeur web, je suis un architecte du changement, bâtissant un avenir où les possibilités sont infinies."`,
+    role: "Développeur"
+  },
+  {
+    name: "RASOANJANAHARY ",
+    firstname: "Christhelen Luicencia",
+    image: "",
+    description: ``,
+    role: "Designer"
+  },
+  {
+    name: "",
+    firstname: "",
+    image: "",
     description: ``,
     role: "Développeur"
   },
   {
     name: "",
     firstname: "",
-    image: "./assets/images/teams/Asmine.jpg",
+    image: "",
     description: ``,
     role: "Développeur"
   },
   {
     name: "",
     firstname: "",
-    image: "./assets/images/teams/Asmine.jpg",
-    description: ``,
-    role: "Développeur"
-  },
-  {
-    name: "",
-    firstname: "",
-    image: "./assets/images/teams/Asmine.jpg",
-    description: ``,
-    role: "Développeur"
-  },
-  {
-    name: "",
-    firstname: "",
-    image: "./assets/images/teams/Asmine.jpg",
-    description: ``,
-    role: "Développeur"
-  },
-  {
-    name: "",
-    firstname: "",
-    image: "./assets/images/teams/Asmine.jpg",
-    description: ``,
-    role: "Développeur"
-  },
-  {
-    name: "",
-    firstname: "",
-    image: "./assets/images/teams/Asmine.jpg",
-    description: ``,
-    role: "Développeur"
-  },
-  {
-    name: "",
-    firstname: "",  
-    image: "./assets/images/teams/Asmine.jpg",
-    description: ``,
-    role: "Développeur"
-  },
-  {
-    name: "",
-    firstname: "",
-    image: "./assets/images/teams/Asmine.jpg",
-    description: ``,
-    role: "Développeur"
-  },
-  {
-    name: "",
-    firstname: "",
-    image: "./assets/images/teams/Asmine.jpg",
-    description: ``,
-    role: "Développeur"
-  },
-  {
-    name: "",
-    firstname: "",
-    image: "./assets/images/teams/Asmine.jpg",
-    description: ``,
-    role: "Développeur"
-  },
-  {
-    name: "",
-    firstname: "",
-    image: "./assets/images/teams/Asmine.jpg",
-    description: ``,
-    role: "Développeur"
-  },
-  {
-    name: "",
-    firstname: "",
-    image: "./assets/images/teams/Asmine.jpg",
+    image: "",
     description: ``,
     role: "Développeur"
   },
