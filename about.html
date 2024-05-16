@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <link rel="stylesheet" href="./assets/css/about.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <script src="./assets/js/script.js" defer></script>
+</head>
+
+<body>
+  <div id="loader">
+    <img src="./assets/images/spinner.svg" alt="" width="200" height="200">
+  </div>
+
+  <header>
+    <div class="logo">
+      <a href="./index.html"><img class="logo" src="./assets/images/logo.png" alt=""></a>
+    </div>
+    <nav>
+      <a href="./index.html">Acceuil</a>
+      <a href="./about.html" class="active">Qui Sommes-nous</a>
+      <a href="./teams.html">Nos équipes</a>
+    </nav>
+    <button onclick="show_modal()">Rejoignez-nous</button>
+
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="hide_modal()">&times;</span>
+        <h2>Please fill it</h2>
+        <form action="#">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          <label for="message">Message:</label>
+          <input type="message" id="message" name="message" required>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+  </header>
+
+  <section class="nos_equipe">
+    <div class="equipe">
+      <div class="text">
+        <h1>NOTRE EQUIPE PLURIDISCIPLINAIRES</h1>
+        <p>Un club où nous explorons ensemble les multiples facettes des médias, du numérique et de l'univers du
+          digital.
+          Plongez dans le monde du design, des jeux vidéo et du développement web.</p>
+        <p>Au sein du club, nous utilisons des outils essentiels pour créer un design de qualité (Figma, Canva, Adobe
+          Photoshop...), ainsi que l'art de la photographie, afin de capturer des images de manière saisissante, de
+          véritables œuvres d'art. Nous nous penchons également sur la maintenance sonore, ajustant avec précision le
+          volume et la stéréo pour offrir une expérience auditive unique au public.</p>
+      </div>
+      <div class="image"><img src="./assets/images/bg/image3.jpg" alt=""></div>
+    </div>
+  </section>
+
+
+
+  <section class="valeurs">
+    <h1 class="grand_titre">NOS VALEURS</h1>
+    <div class="valeur">
+      <div class="text_valeur">
+        <h3>Innovation et Créativité</h3>
+        <p>Nos valeurs reposent sur l'innovation et la créativité. Nous encourageons l'esprit d'initiative et la
+          proposition de nouvelles idées, stimulant ainsi notre créativité collective. La solidarité entre les membres
+          est primordiale, car c'est ensemble que nous visons l'excellence et l'accomplissement de projets grandioses et
+          ambitieux. Un club où l'on vit une aventure passionnante au cœur du monde digital !</p>
+        <a href="#">En savoir plus</a>
+      </div>
+
+      <div class="img_valeur">
+        <div class="img1 image">
+          <img src="./assets/images/bg/image1.jpg" alt="">
+        </div>
+        <div class="img2 image"><img src="./assets/images/bg/image3.jpg" alt=""></div>
+        <div class="img3 image"><img src="./assets/images/bg/image2.jpg" alt=""></div>
+        <div class="img4 image"><img src="./assets/images/bg/image4.jpg" alt=""></div>
+        <div class="img5 image"><img src="./assets/images/bg/image1.jpg" alt=""></div>
+        <!-- <div class="img6"><img src="./assets/images/bg/image2.jpg" alt=""></div> -->
+      </div>
+    </div>
+  </section>
+
+
+
+  <footer data-aos="fade-down" data-aos-duration="1000">
+    <article class="article_contact">
+      <h1 class="grand_titre">RESTONS EN CONTACT</h1>
+      <div class="all_application">
+        <div onclick="redirectExt(`https://www.facebook.com/profile.php?id=61557986422642`)" class="application">
+          <div class="application_img">
+            <i class="fa-brands fa-facebook"></i>
+          </div>
+          <div class="application_text">
+            <a href="https://www.facebook.com/profile.php?id=61557986422642">@clubs PNM</a>
+          </div>
+        </div>
+        <div onclick="redirectExt(`https://maps.app.goo.gl/NGjLTWBdgrRigsdo7`)" class="application">
+          <div class="application_img">
+            <i class="fa-solid fa-location-dot"></i>
+          </div>
+          <div class="application_text">
+            <a href="https://maps.app.goo.gl/NGjLTWBdgrRigsdo7" target="_blank">BP 8515 <br />
+              Enceinte ASFOR, Antananarivo 101</a>
+          </div>
+        </div>
+        <div onclick="redirectExt(`https://www.facebook.com/passerelles.numeriques.madagasikara`)" class="application">
+          <div class="application_img">
+            <i class="fa-brands fa-facebook"></i>
+          </div>
+          <div class="application_text">
+            <a href="https://www.facebook.com/passerelles.numeriques.madagasikara">@Passerelles Numériques Madagasikara</a>
+          </div>
+        </div>
+        <div onclick="redirectExt(`https://www.passerellesnumeriques.org/fr/nos-actions/madagascar/`)" class="application">
+          <div class="application_img">
+            <i class="fa-solid fa-globe"></i>
+          </div>
+          <div class="application_text">
+            <a href="https://www.passerellesnumeriques.org/fr/nos-actions/madagascar/" target="_blank">Site Web<br />Passerelles Numériques</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="article_copyright">
+      <p>C2024 - Multimédia PNM | All right reserved</p>
+      <a href="#">
+        <p>Mentions légales</p>
+      </a>
+    </article>
+
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="hide_modal()">&times;</span>
+        <h2>Please fill it</h2>
+        <form action="#">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/about.js"></script>
+</body>
+
+</html>

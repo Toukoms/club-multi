@@ -1,119 +1,277 @@
 <!DOCTYPE html>
 <html lang="">
-  <head>
-    <meta charset="utf-8" />
-    <title>Projet Multimédia</title>
-    <link rel="stylesheet" href="./assets/css/styles.css" />
-    <script src="./assets/js/script.js" defer></script>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <a href="#" class="active">Qui Sommes-nous</a>
-        <a href="#">Nos Activités</a>
-        <a href="#">Actualités</a>
-        <button>Nous Rejoindre</button>
-      </nav>
-    </header>
-    <main>
-      <section class="section_home">
-        <h1>Section home</h1>
-      </section>
-      <section class="section_activite">
-        <article>
-          <h1>Nos Activités</h1>
-          <div class="all_card">
-            <div class="card">
-              <div class="card-img">
-                <img src="./assets/images/dev.png" alt="code" />
-              </div>
-              <div class="card-txt">
-                <h2>Design et Développement d'application</h2>
-              </div>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Projet Multimédia</title>
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+  <link rel="stylesheet" href="./assets/css/hero.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <script src="./assets/js/script.js" defer></script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body>
+  <div id="loader">
+    <img src="./assets/images/spinner.svg" alt="">
+    <p>Merci de patienter !</p>
+  </div>
+
+  <header>
+    <div class="logo">
+      <a href="index.html"><img class="logo" src="./assets/images/logo.png" alt=""></a>
+    </div>
+    <nav>
+      <a href="#" class="active">Acceuil</a>
+      <a href="./about.html">Qui Sommes-nous</a>
+      <a href="./teams.html">Nos équipes</a>
+    </nav>
+    <button onclick="show_modal()">Rejoignez-nous</button>
+
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="hide_modal()">&times;</span>
+        <h2>Please fill it</h2>
+        <form action="#">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          <label for="message">Message:</label>
+          <input type="message" id="message" name="message" required>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section_home">
+      <div class="mask"></div>
+      <div class="container">
+        <h2>Osez L'AUDACE</h2>
+        <h1>CLUB MULTIMEDIA</h1>
+        <P>PASSERELLES NUMERIQUES MADAGASCAR</P>
+        <a href="./about.html">En savoir Plus</a>
+      </div>
+    </section>
+
+    <section class="words">
+      <h1  data-aos="fade-up" data-aos-duration="1000">Mot de Président</h1>
+      <div class="rect"  data-aos="slide-up" data-aos-duration="1000">
+        <div class="image"><img src="./assets/images/teams/Toki.jpg" alt="toki"></div>
+        <p class="text">
+          " La technologie est la clé qui ouvre la porte d'un avenir meilleur, permettant à chacun de rêver, de créer et
+          de vivre une vie plein de bonheur. "
+        </p>
+      </div>
+    </section>
+
+    <section class="section_activite" data-aos="fade-in" data-aos-duration="1000">
+      <article>
+        <h1>Nos Activités</h1>
+        <div class="all_card">
+
+          <div class="card" data-aos="flip-left" data-aos-duration="1000">
+            <div class="card-img">
+              <img src="./assets/images/activities/dev.jpg" alt="code" />
             </div>
-            <div class="card">
-              <div class="card-img">
-                <img src="./assets/images/photo.png" alt="code" />
-              </div>
-              <div class="card-txt">
-                <h2>Photographie et Montage vidéo et image</h2>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-img">
-                <img src="./assets/images/sono.png" alt="code" />
-              </div>
-              <div class="card-txt">
-                <h2>Sonorisation et montage audio</h2>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-img">
-                <img src="./assets/images/jeu.png" alt="code" />
-              </div>
-              <div class="card-txt">
-                <h2>Jeux vidéos</h2>
-              </div>
+            <div class="card-txt">
+              <h2>Design et Développement d'application</h2>
             </div>
           </div>
-        </article>
-      </section>
-      <section class="section_motivation">
-        <h1>Section motivation</h1>
-        <div class="motivations">
-          <div class="card">
-            <h2>Curiosité</h2>
-            <p>
-              La curiosité est essentiel pour explorer de nouvelles
-              inspirations, apprendre et découvrir des idées novatrices. En
-              travaillant en équipe, la curiosité peut nous pousser à chercher
-              des solutions créatives et à rester constamment à la recherche de
-              nouvelles opportunités de création de notre site, et de tous nos
-              autres activités
-            </p>
+
+          <div class="card" data-aos="flip-left" data-aos-duration="1000">
+            <div class="card-img">
+              <img src="./assets/images/activities/photo.jpg" alt="photo" />
+            </div>
+            <div class="card-txt">
+              <h2>Photographie et Montage vidéo et image</h2>
+            </div>
           </div>
-          <div class="card">
-            <h2>Interdépendances</h2>
-            <p>
-              En travaillant en équipe implique de
-              reconnaître que chaque membre apporte des compétences et ses
-              domaines qui correspondent. L'interdépendance souligne
-              l'importance de la collaboration, de la confiance et de la
-              complémentarité des forces pour atteindre des objectifs communs et
-              d'en faire sortir nos sites du clubs multimédia pour Passerelle
-              Numérique Madagascar.
-            </p>
+
+          <div class="card" data-aos="flip-left" data-aos-duration="1000">
+            <div class="card-img">
+              <img src="./assets/images/activities/sono.jpg" alt="code" />
+            </div>
+            <div class="card-txt">
+              <h2>Sonorisation et montage audio</h2>
+            </div>
           </div>
-          <div class="card">
-            <h2>Cohérences</h2>
-            <p>
-              Nos cohérences: La cohérence est essentielle pour garantir que
-              chaque membre de l'équipe travaille en harmonie vers un but
-              commun. Pour avoir des objectifs clairs, des communications
-              efficaces, une répartition équitable des tâches et une
-              coordination pour assurer la qualité et l'efficacité du travail
-              accompli.
-            </p>
-          </div>
-          <div class="card">
-            <h2>Communication</h2>
-            <p>
-              Nos échanges à accomplir le tâche : L'échange d'idées, de
-              connaissances et de feed-back entre les membres de l'équipe est
-              crucial pour favoriser l'innovation et la croissance collective.
-              Encourager un environnement où chacun se sent libre de partager
-              ses perspectives et d'écouter celles des autres peut conduire à
-              des solutions plus créatives et des résultats plus enrichissants.
-            </p>
+
+          <div class="card" data-aos="flip-left" data-aos-duration="1000">
+            <div class="card-img">
+              <img src="./assets/images/activities/jeu.jpg" alt="code" />
+            </div>
+            <div class="card-txt">
+              <h2>Jeux vidéos</h2>
+            </div>
           </div>
         </div>
-      </section>
-      <section class="section_contact">
-        <h1>Section contact</h1>
-      </section>
-    </main>
-    <footer>
-      <h1>Footer</h1>
-    </footer>
-  </body>
+      </article>
+    </section>
+
+    <hr>
+
+    <section class="section_motivation" data-aos="fade-down" data-aos-duration="1000">
+      <h1>Nos Motivations</h1>
+      <div class="motivations">
+        <div class="card" data-aos="fade-down" data-aos-duration="1000">
+          <h2>Curiosité</h2>
+          <p>
+            La curiosité est essentiel pour explorer de nouvelles
+            inspirations, apprendre et découvrir des idées novatrices. En
+            travaillant en équipe, la curiosité peut nous pousser à chercher
+            des solutions créatives et à rester constamment à la recherche de
+            nouvelles opportunités de création de notre site, et de tous nos
+            autres activités
+          </p>
+        </div>
+        <div class="card" data-aos="fade-down" data-aos-duration="1000">
+          <h2>Interdépendances</h2>
+          <p>
+            Nos interdépendances en travaillant en équipe implique de
+            reconnaître que chaque membre apporte des compétences et ses
+            domaines qui correspondent. Cela souligne
+            l'importance de la collaboration, de la confiance et de la
+            complémentarité des forces pour atteindre des objectifs communs.
+          </p>
+        </div>
+        <div class="card" data-aos="fade-down" data-aos-duration="1000">
+          <h2>Cohérences</h2>
+          <p>
+            Nos cohérences: La cohérence est essentielle pour garantir que
+            chaque membre de l'équipe travaille en harmonie vers un but
+            commun. Pour avoir des objectifs clairs, des communications
+            efficaces, une répartition équitable des tâches et une
+            coordination pour assurer la qualité et l'efficacité du travail
+            accompli.
+          </p>
+        </div>
+        <div class="card" data-aos="fade-down" data-aos-duration="1000">
+          <h2>Collaboration</h2>
+          <p>
+            L'échange d'idées, de
+            connaissances et de feed-back entre les équipes est
+            crucial pour favoriser l'innovation et la croissance collective.
+            Encourager un environnement où chacun se sent libre de partager
+            ses perspectives et d'écouter celles des autres conduit à
+            des solutions plus créatives.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <hr>
+
+    <section class="section_team" data-aos="fade-down" data-aos-duration="1000">
+      <article class="article_team">
+        <div class="square">
+          <div class="first_square">
+            <span></span>
+            <span></span>
+          </div>
+          <div class="second_square">
+            <span></span>
+            <span></span>
+          </div>
+          <div class="third_square">
+            <span></span>
+            <span></span>
+          </div>
+          <div class="big_square">
+            <span></span>
+          </div>
+        </div>
+
+        <div class="team_text">
+          <div class="text">
+            <p>
+              Plongez au cœur de notre club et découvrez nos équipes dynamiques : des designers innovants, des
+              rédacteurs talentueux et des développeurs passionnés. Rejoignez-nous pour une exploration enrichissante de
+              la créativité et du savoir-faire technique.
+            </p>
+            <a href="">Découvrez !</a>
+          </div>
+        </div>
+
+      </article>
+    </section>
+
+  </main>
+
+  <hr />
+
+  <footer data-aos="fade-down" data-aos-duration="1000">
+    <article class="article_contact">
+      <h1 class="grand_titre">RESTONS EN CONTACT</h1>
+      <div class="all_application">
+        <div onclick="redirectExt(`https://www.facebook.com/profile.php?id=61557986422642`)" class="application">
+          <div class="application_img">
+            <i class="fa-brands fa-facebook"></i>
+          </div>
+          <div class="application_text">
+            <a href="https://www.facebook.com/profile.php?id=61557986422642">@clubs PNM</a>
+          </div>
+        </div>
+        <div onclick="redirectExt(`https://maps.app.goo.gl/NGjLTWBdgrRigsdo7`)" class="application">
+          <div class="application_img">
+            <i class="fa-solid fa-location-dot"></i>
+          </div>
+          <div class="application_text">
+            <a href="https://maps.app.goo.gl/NGjLTWBdgrRigsdo7" target="_blank">BP 8515 <br />
+              Enceinte ASFOR, Antananarivo 101</a>
+          </div>
+        </div>
+        <div onclick="redirectExt(`https://www.facebook.com/passerelles.numeriques.madagasikara`)" class="application">
+          <div class="application_img">
+            <i class="fa-brands fa-facebook"></i>
+          </div>
+          <div class="application_text">
+            <a href="https://www.facebook.com/passerelles.numeriques.madagasikara">@Passerelles Numériques
+              Madagasikara</a>
+          </div>
+        </div>
+        <div onclick="redirectExt(`https://www.passerellesnumeriques.org/fr/nos-actions/madagascar/`)"
+          class="application">
+          <div class="application_img">
+            <i class="fa-solid fa-globe"></i>
+          </div>
+          <div class="application_text">
+            <a href="https://www.passerellesnumeriques.org/fr/nos-actions/madagascar/" target="_blank">Site
+              Web<br />Passerelles Numériques</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="article_copyright">
+      <p>C2024 - Multimédia PNM | All right reserved</p>
+      <a href="#">
+        <p>Mentions légales</p>
+      </a>
+    </article>
+
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="hide_modal()">&times;</span>
+        <h2>Please fill it</h2>
+        <form action="#">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    AOS.init();
+  </script>
+</body>
+
 </html>
