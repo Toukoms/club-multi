@@ -23,3 +23,15 @@ function hide_modal() {
 function redirectExt(href) {
   window.open(href, "_blank");
 }
+
+const menuBtn = document.querySelector('.menu')
+const closeBtn = document.querySelector('.close')
+const navBar = document.getElementsByTagName('nav')[0]
+
+menuBtn.addEventListener('click', () => {
+  navBar.style.transform = 'translateX(0)'
+})
+
+closeBtn.addEventListener('click', () => {
+  navBar.style.transform = 'translateX(100%)'
+})
