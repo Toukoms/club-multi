@@ -691,7 +691,7 @@ footer {
     display: block;
     position: absolute;
     top: 24px;
-    right: 56px;
+    right: 16vw;
   }
 
   header nav {
@@ -705,7 +705,7 @@ footer {
     align-items: start;
     gap: 2rem;
     height: 100dvh;
-    width: 80%;
+    width: 80vw;
     box-shadow: -2px 1px 6px 2px #40404010;
     transform: translateX(100%);
     transition: transform 0.5s ease;
