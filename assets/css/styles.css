@@ -84,6 +84,11 @@ header span.menu,
 header span.close {
   display: none;
   color: var(--orange);
+  cursor: pointer;
+}
+
+header span.menu:hover {
+  color: var(--primary-color);
 }
 
 header.sticky {
@@ -200,7 +205,7 @@ section.words {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 0 8px 2px #40404010;
+    box-shadow: 0 0 8px 2px #40404020;
 
     .image {
       position: relative;
@@ -652,7 +657,7 @@ footer {
 
   .section_motivation div.motivations div.card {
     width: 100%;
-    height: 14rem;
+    height: max-content;
   }
 
   .section_team {
@@ -680,7 +685,7 @@ footer {
 @media screen and (max-width: 756px) {
   header {
     justify-content: space-between;
-    padding-inline: 1rem;
+    padding: 0.5rem 1rem;
   }
 
   header span.menu {
@@ -706,7 +711,7 @@ footer {
     gap: 2rem;
     height: 100dvh;
     width: 80vw;
-    box-shadow: -2px 1px 6px 2px #40404010;
+    box-shadow: -2px 1px 6px 2px #40404020;
     transform: translateX(100%);
     transition: transform 0.5s ease;
     z-index: 99999;
@@ -740,7 +745,7 @@ footer {
   .section_activite .all_card {
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
+    gap: 1.5rem;
     width: 100%;
   }
 
@@ -754,8 +759,16 @@ footer {
 
   .section_motivation div.motivations div.card {
     width: 80%;
-    height: 16rem;
     padding-inline: 1rem;
+  }
+
+  .section_team .text {
+    width: 90%;
+    padding: 2rem 1rem;
+  }
+
+  .section_team .text p {
+    margin-top: 0;
   }
 
   footer {
