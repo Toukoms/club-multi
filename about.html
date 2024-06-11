@@ -21,14 +21,24 @@
 
   <header>
     <div class="logo">
-      <a href="./index.html"><img class="logo" src="./assets/images/logo.png" alt=""></a>
+      <a href="index.html"><img class="logo" src="./assets/images/logo.png" alt=""></a>
     </div>
     <nav>
-      <a href="./index.html">Acceuil</a>
-      <a href="./about.html" class="active">Qui sommes-nous</a>
+      <a href="#" class="active">Acceuil</a>
+      <a href="./about.html">Qui sommes-nous</a>
       <a href="./teams.html">Nos équipes</a>
+      <button onclick="redirectExt(`mailto:tokiniaina.rahajanirina@student.passerellesnumeriques.org`)">
+        Contactez-nous
+      </button>
+      <span class="close">
+        <i class="fa-solid fa-xmark fa-xl"></i>
+      </span>
     </nav>
-    <button onclick="redirectExt(`mailto:tokiniaina.rahajanirina@student.passerellesnumeriques.org`)">Contactez-nous</button>
+    <button
+      onclick="redirectExt(`mailto:tokiniaina.rahajanirina@student.passerellesnumeriques.org`)">Contactez-nous</button>
+    <span class="menu">
+      <i class="fa-solid fa-bars fa-2xl"></i>
+    </span>
   </header>
 
   <section class="nos_equipe">
