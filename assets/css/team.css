@@ -10,6 +10,14 @@ header {
     backdrop-filter: blur(3px);
 }
 
+header.sticky span.menu {
+    color: var(--orange);
+}
+
+header span.menu:hover {
+    color: var(--primary-text-color)
+}
+
 section,
 footer {
     border: none !important;
