@@ -22,7 +22,7 @@ body {
   color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
   overflow-x: hidden;
-  overflow-y: hidden;
+  /* overflow-y: hidden; */
 }
 
 a {
@@ -31,6 +31,10 @@ a {
 }
 
 #loader {
+  display: none;
+}
+
+/* #loader {
   width: 100vw;
   height: 100vh;
   background-color: var(--primary-color);
@@ -44,7 +48,7 @@ a {
   top: 0;
   left: 0;
   z-index: 99999;
-}
+} */
 
 #loader p {
   font-size: 2rem;

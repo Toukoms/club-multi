@@ -1,10 +1,10 @@
 // import { lazyLoadImages } from './lazyLoad.js';
 
-window.addEventListener('load', () => {
-  const loading = document.getElementById("loader");
-  loading.style.display = "none";
-  document.body.style.overflowY = "scroll";
-});
+// window.addEventListener('load', () => {
+//   const loading = document.getElementById("loader");
+//   loading.style.display = "none";
+//   document.body.style.overflowY = "scroll";
+// });
 
 const header = document.getElementsByTagName("header")[0];
 header.classList.toggle("sticky", window.scrollY > 12);
