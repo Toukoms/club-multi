@@ -226,3 +226,15 @@ section#teams .card span.role {
     color: var(--orange);
     text-transform: capitalize;
 }
+
+@media screen and (max-width: 1012px) {
+    section#teams div.all-teams h2 {
+        width: 100%;
+        padding-inline: 3rem;
+        white-space: nowrap;
+    }
+
+    section#teams h1 {
+        font-size: max(3.75vw, 2rem);
+    }
+}
